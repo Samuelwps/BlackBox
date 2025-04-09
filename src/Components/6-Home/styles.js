@@ -28,7 +28,6 @@ export const Container = styled.div`
   user-select: none;
   gap: 2rem;
 
-
   h1 {
     font-weight: normal;
     color: white;
@@ -224,7 +223,7 @@ export const SectionBook = styled.div`
     background: rgba(255, 255, 255, 0.16);
     box-shadow: 0 4px 22px 0 rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(13.5px);
-    border-radius: 40px;
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 
     img {
@@ -244,13 +243,15 @@ export const SectionBook = styled.div`
       font-weight: 400;
       font-style: normal;
 
+      height: 100%;
+
       display: flex;
       flex-direction: column;
       justify-content: center; /* Centraliza verticalmente */
       align-items: center; /* Centraliza horizontalmente */
       background-color: var(--Black);
       box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.25);
-      border-radius: 40px;
+      border-radius: 12px;
       padding: 2rem;
       color: white;
       transition: 0.3s;
@@ -326,8 +327,10 @@ export const SectionBook = styled.div`
           backdrop-filter: blur(13.5px);
 
           .IconDownload {
+            color: var(--White);
             margin-right: 1rem;
             font-size: 1.5rem;
+           transition: 0.3s;
           }
 
           &:hover {
@@ -335,6 +338,10 @@ export const SectionBook = styled.div`
             background: transparent;
             color: var(--Green);
             border: 1px solid var(--Green);
+
+            .IconDownload {
+              color: var(--Green);
+            }
           }
         }
       }

@@ -13,7 +13,7 @@ export const ContainerALl = styled.div`
 
 export const Container = styled.div`
   width: 80%;
-  margin-top: 10%;
+  margin-top: 3%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -150,13 +150,13 @@ export const ContainerHeader = styled.div`
   span{
     font-size: 1.5rem;
     color: var(--White);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   p{
     font-size: 1.2rem;
     color: var(--White);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
 `

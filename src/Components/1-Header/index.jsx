@@ -1,10 +1,15 @@
-import { Container, ContainerLogo } from "./styles";
+import React from "react";
+import { FaBoxOpen } from "react-icons/fa";
+import { HeaderContainer, Logo, Title } from "./styles";
 
 function Header() {
   return (
-    <Container>
-      <ContainerLogo>LOGO</ContainerLogo>
-    </Container>
+    <HeaderContainer>
+      <Logo>
+        <FaBoxOpen />
+      </Logo>
+      <Title>Black Box Digital</Title>
+    </HeaderContainer>
   );
 }
 

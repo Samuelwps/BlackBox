@@ -97,7 +97,7 @@ function Home() {
                       type="button"
                       onClick={() => redirecioneComHistorico(book.link)}
                     >
-                      <MdGetApp size="2rem" color="var(--White)" className="IconDownload" />
+                      <MdGetApp size="2rem" className="IconDownload" />
                       QUERO MEU EBOOK AGORA!
                     </button>
                   </Price>
