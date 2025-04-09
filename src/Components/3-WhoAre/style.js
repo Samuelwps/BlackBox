@@ -75,7 +75,7 @@ export const Topcs = styled.div`
 
   span {
     color: var(--Red);
-    font-weight: normal;
+    font-weight: bold;
   }
 
   svg {
