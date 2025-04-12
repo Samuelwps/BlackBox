@@ -19,7 +19,7 @@ import image2 from "../../images/Ebooks/fbi.webp";
 import image3 from "../../images/Ebooks/financeira.webp";
 import image4 from "../../images/Ebooks/poder.webp";
 import image5 from "../../images/Ebooks/mindset_temp.webp";
-import image6 from "../../images/Ebooks/7habitos.webp";
+// import image6 from "../../images/Ebooks/7habitos.webp";
 import image7 from "../../images/Ebooks/amigos.webp";
 import image8 from "../../images/Ebooks/habitos_atomicos.webp";
 import image9 from "../../images/Ebooks/poder_agora.webp";
@@ -61,7 +61,7 @@ const slideData = [
   { image: image3, link: "https://black-box-nine.vercel.app" },
   { image: image4, link: "https://black-box-nine.vercel.app" },
   { image: image5, link: "https://black-box-nine.vercel.app" },
-  { image: image6, link: "https://black-box-nine.vercel.app" },
+
   { image: image7, link: "https://black-box-nine.vercel.app" },
   { image: image8, link: "https://black-box-nine.vercel.app" },
   { image: image9, link: "https://black-box-nine.vercel.app" },
