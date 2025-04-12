@@ -18,7 +18,7 @@ import image1 from "../../images/Ebooks/48min.webp";
 import image2 from "../../images/Ebooks/fbi.webp";
 import image3 from "../../images/Ebooks/financeira.webp";
 import image4 from "../../images/Ebooks/poder.webp";
-import image5 from "../../images/Ebooks/mindset.webp";
+import image5 from "../../images/Ebooks/mindset_temp.webp";
 import image6 from "../../images/Ebooks/7habitos.webp";
 import image7 from "../../images/Ebooks/amigos.webp";
 import image8 from "../../images/Ebooks/habitos_atomicos.webp";
