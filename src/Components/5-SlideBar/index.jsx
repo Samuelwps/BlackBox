@@ -8,7 +8,7 @@ import {
   ContainerInLine,
   Lines,
   ContainerHeader,
-  Item
+  Item,
 } from "./styled.js";
 import { motion } from "framer-motion";
 import { GiJigsawBox } from "react-icons/gi";
@@ -56,45 +56,38 @@ import voceUniverso from "../../images/Ebooks/voce_universo.webp";
 
 // Dados do carrossel
 const slideData = [
-  { image: image1, link: "https://black-box-nine.vercel.app" },
-  { image: image2, link: "https://black-box-nine.vercel.app" },
-  { image: image3, link: "https://black-box-nine.vercel.app" },
-  { image: image4, link: "https://black-box-nine.vercel.app" },
-  { image: image5, link: "https://black-box-nine.vercel.app" },
+  // Desenvolvimento Pessoal
+  { image: image8, link: "https://black-box-nine.vercel.app" }, // Hábitos Atômicos
+  { image: image9, link: "https://black-box-nine.vercel.app" }, // O Poder do Agora
+  { image: image5, link: "https://black-box-nine.vercel.app" }, // Mindset
+  { image: emocionalPratica, link: "https://black-box-nine.vercel.app" }, // Inteligência Emocional na Prática
+  { image: inteligenciaEmocional, link: "https://black-box-nine.vercel.app" }, // Inteligência Emocional
 
-  { image: image7, link: "https://black-box-nine.vercel.app" },
-  { image: image8, link: "https://black-box-nine.vercel.app" },
-  { image: image9, link: "https://black-box-nine.vercel.app" },
-  { image: image10, link: "https://black-box-nine.vercel.app" },
-  { image: rapidoDevagar, link: "https://black-box-nine.vercel.app" },
-  { image: habito, link: "https://black-box-nine.vercel.app" },
-  { image: produtivo, link: "https://black-box-nine.vercel.app" },
-  { image: convencer90s, link: "https://black-box-nine.vercel.app" },
-  { image: dinheiroFeliz, link: "https://black-box-nine.vercel.app" },
-  { image: milMilhao, link: "https://black-box-nine.vercel.app" },
-  { image: elonMusk, link: "https://black-box-nine.vercel.app" },
-  { image: fortunaAcoes, link: "https://black-box-nine.vercel.app" },
-  { image: formigas, link: "https://black-box-nine.vercel.app" },
-  { image: inteligenciaEmocional, link: "https://black-box-nine.vercel.app" },
-  { image: emocionalPratica, link: "https://black-box-nine.vercel.app" },
-  { image: lideranca, link: "https://black-box-nine.vercel.app" },
-  { image: mastersSex, link: "https://black-box-nine.vercel.app" },
-  { image: maximizePotencial, link: "https://black-box-nine.vercel.app" },
-  { image: mestrePersuasao, link: "https://black-box-nine.vercel.app" },
-  { image: caminhoRiqueza, link: "https://black-box-nine.vercel.app" },
-  { image: cerebroPerformance, link: "https://black-box-nine.vercel.app" },
-  { image: fimProcrastinacao, link: "https://black-box-nine.vercel.app" },
-  { image: jogoInfinito, link: "https://black-box-nine.vercel.app" },
-  { image: ladoDificil, link: "https://black-box-nine.vercel.app" },
-  { image: loboWallStreet, link: "https://black-box-nine.vercel.app" },
-  { image: principe, link: "https://black-box-nine.vercel.app" },
-  { image: problemaSeu, link: "https://black-box-nine.vercel.app" },
-  { image: seteNiveis, link: "https://black-box-nine.vercel.app" },
-  { image: segredosLobo, link: "https://black-box-nine.vercel.app" },
-  { image: pensaEnriquece, link: "https://black-box-nine.vercel.app" },
-  { image: sapiens, link: "https://black-box-nine.vercel.app" },
-  { image: scrum, link: "https://black-box-nine.vercel.app" },
-  { image: voceUniverso, link: "https://black-box-nine.vercel.app" },
+  // Liderança e Persuasão
+  { image: lideranca, link: "https://black-box-nine.vercel.app" }, // Liderança
+  { image: mestrePersuasao, link: "https://black-box-nine.vercel.app" }, // Mestre da Persuasão
+  { image: maximizePotencial, link: "https://black-box-nine.vercel.app" }, // Maximize Seu Potencial
+  { image: jogoInfinito, link: "https://black-box-nine.vercel.app" }, // O Jogo Infinito
+
+  // Finanças e Negócios
+  { image: dinheiroFeliz, link: "https://black-box-nine.vercel.app" }, // Dinheiro Feliz
+  { image: milMilhao, link: "https://black-box-nine.vercel.app" }, // Do Mil ao Milhão
+  { image: fortunaAcoes, link: "https://black-box-nine.vercel.app" }, // Fortuna em Ações
+  { image: caminhoRiqueza, link: "https://black-box-nine.vercel.app" }, // O Caminho para a Riqueza
+  { image: loboWallStreet, link: "https://black-box-nine.vercel.app" }, // O Lobo de Wall Street
+
+  // Produtividade
+  { image: fimProcrastinacao, link: "https://black-box-nine.vercel.app" }, // O Fim da Procrastinação
+  { image: produtivo, link: "https://black-box-nine.vercel.app" }, // Produtivo
+  { image: rapidoDevagar, link: "https://black-box-nine.vercel.app" }, // Rápido e Devagar
+  { image: scrum, link: "https://black-box-nine.vercel.app" }, // Scrum
+
+  // Outros Interesses
+  { image: sapiens, link: "https://black-box-nine.vercel.app" }, // Sapiens
+  { image: pensaEnriquece, link: "https://black-box-nine.vercel.app" }, // Pense e Enriqueça
+  { image: seteNiveis, link: "https://black-box-nine.vercel.app" }, // Os 7 Níveis
+  { image: problemaSeu, link: "https://black-box-nine.vercel.app" }, // O Problema é Seu
+  { image: voceUniverso, link: "https://black-box-nine.vercel.app" }, // Você é o Universo
 ];
 
 // Componente SlideBar
@@ -155,11 +148,13 @@ const SlideBar = () => {
       </ContainerInLine>
       <ContainerHeader>
         <h1>LEITURAS QUE MUDA O JOGO</h1>
-        <p>Quer convencer, liderar ou vencer? Esses livros 
-          são sua vantagem estratégica.
+        <p>
+          Quer convencer, liderar ou vencer? Esses livros são sua vantagem
+          estratégica.
         </p>
-        <span>Conhecimento direto, prático e poderoso — escolha <br/>agora e transforme sua 
-          mente em uma arma de alta performance.
+        <span>
+          Conhecimento direto, prático e poderoso — escolha <br />
+          agora e transforme sua mente em uma arma de alta performance.
         </span>
       </ContainerHeader>
       {/* Carrossel */}
