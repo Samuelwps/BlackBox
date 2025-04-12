@@ -7,24 +7,52 @@ import {
   Button,
   ContainerInLine,
   Lines,
-  ContainerHeader
+  ContainerHeader,
+  Item
 } from "./styled.js";
 import { motion } from "framer-motion";
 import { GiJigsawBox } from "react-icons/gi";
 
 // Importação de imagens
-import image1 from "../../images/Ebooks/48MinBook.webp";
-import image2 from "../../images/Ebooks/FBIMinBook.webp";
-import image3 from "../../images/Ebooks/FinaceiraMinBook.webp";
-import image4 from "../../images/Ebooks/PoderMinBook.webp";
-import image5 from "../../images/Ebooks/MindSet.webp";
-import image6 from "../../images/Ebooks/7Habitos.webp";
-import image7 from "../../images/Ebooks/ComoFazerAmigos.webp";
-import image8 from "../../images/Ebooks/HabitosAtomicos.webp";
-import image9 from "../../images/Ebooks/poderdoagora.webp";
+import image1 from "../../images/Ebooks/48min.webp";
+import image2 from "../../images/Ebooks/fbi.webp";
+import image3 from "../../images/Ebooks/financeira.webp";
+import image4 from "../../images/Ebooks/poder.webp";
+import image5 from "../../images/Ebooks/mindset.webp";
+import image6 from "../../images/Ebooks/7habitos.webp";
+import image7 from "../../images/Ebooks/amigos.webp";
+import image8 from "../../images/Ebooks/habitos_atomicos.webp";
+import image9 from "../../images/Ebooks/poder_agora.webp";
 import image10 from "../../images/Ebooks/autoresponsabilidade.webp";
-import image11 from "../../images/Ebooks/RapidoDevagar.webp";
-import image12 from "../../images/Ebooks/HabitoMinBook.webp";
+import rapidoDevagar from "../../images/Ebooks/rapido_devagar.webp";
+import habito from "../../images/Ebooks/habito.webp";
+import produtivo from "../../images/Ebooks/produtivo.webp";
+import convencer90s from "../../images/Ebooks/convencer_90s.webp";
+import dinheiroFeliz from "../../images/Ebooks/dinheiro_feliz.webp";
+import milMilhao from "../../images/Ebooks/mil_milhao.webp";
+import elonMusk from "../../images/Ebooks/elon_musk.webp";
+import fortunaAcoes from "../../images/Ebooks/fortuna_acoes.webp";
+import formigas from "../../images/Ebooks/formigas.webp";
+import inteligenciaEmocional from "../../images/Ebooks/inteligencia_emocional.webp";
+import emocionalPratica from "../../images/Ebooks/emocional_pratica.webp";
+import lideranca from "../../images/Ebooks/lideranca.webp";
+import mastersSex from "../../images/Ebooks/masters_sex.webp";
+import maximizePotencial from "../../images/Ebooks/maximize_potencial.webp";
+import mestrePersuasao from "../../images/Ebooks/mestre_persuasao.webp";
+import caminhoRiqueza from "../../images/Ebooks/caminho_riqueza.webp";
+import cerebroPerformance from "../../images/Ebooks/cerebro_performance.webp";
+import fimProcrastinacao from "../../images/Ebooks/fim_procrastinacao.webp";
+import jogoInfinito from "../../images/Ebooks/jogo_infinito.webp";
+import ladoDificil from "../../images/Ebooks/lado_dificil.webp";
+import loboWallStreet from "../../images/Ebooks/lobo_wallstreet.webp";
+import principe from "../../images/Ebooks/principe.webp";
+import problemaSeu from "../../images/Ebooks/problema_seu.webp";
+import seteNiveis from "../../images/Ebooks/7_niveis.webp";
+import segredosLobo from "../../images/Ebooks/segredos_lobo.webp";
+import pensaEnriquece from "../../images/Ebooks/pensa_enriquece.webp";
+import sapiens from "../../images/Ebooks/sapiens.webp";
+import scrum from "../../images/Ebooks/scrum.webp";
+import voceUniverso from "../../images/Ebooks/voce_universo.webp";
 
 // Dados do carrossel
 const slideData = [
@@ -38,8 +66,35 @@ const slideData = [
   { image: image8, link: "https://black-box-nine.vercel.app" },
   { image: image9, link: "https://black-box-nine.vercel.app" },
   { image: image10, link: "https://black-box-nine.vercel.app" },
-  { image: image11, link: "https://black-box-nine.vercel.app" },
-  { image: image12, link: "https://black-box-nine.vercel.app" },
+  { image: rapidoDevagar, link: "https://black-box-nine.vercel.app" },
+  { image: habito, link: "https://black-box-nine.vercel.app" },
+  { image: produtivo, link: "https://black-box-nine.vercel.app" },
+  { image: convencer90s, link: "https://black-box-nine.vercel.app" },
+  { image: dinheiroFeliz, link: "https://black-box-nine.vercel.app" },
+  { image: milMilhao, link: "https://black-box-nine.vercel.app" },
+  { image: elonMusk, link: "https://black-box-nine.vercel.app" },
+  { image: fortunaAcoes, link: "https://black-box-nine.vercel.app" },
+  { image: formigas, link: "https://black-box-nine.vercel.app" },
+  { image: inteligenciaEmocional, link: "https://black-box-nine.vercel.app" },
+  { image: emocionalPratica, link: "https://black-box-nine.vercel.app" },
+  { image: lideranca, link: "https://black-box-nine.vercel.app" },
+  { image: mastersSex, link: "https://black-box-nine.vercel.app" },
+  { image: maximizePotencial, link: "https://black-box-nine.vercel.app" },
+  { image: mestrePersuasao, link: "https://black-box-nine.vercel.app" },
+  { image: caminhoRiqueza, link: "https://black-box-nine.vercel.app" },
+  { image: cerebroPerformance, link: "https://black-box-nine.vercel.app" },
+  { image: fimProcrastinacao, link: "https://black-box-nine.vercel.app" },
+  { image: jogoInfinito, link: "https://black-box-nine.vercel.app" },
+  { image: ladoDificil, link: "https://black-box-nine.vercel.app" },
+  { image: loboWallStreet, link: "https://black-box-nine.vercel.app" },
+  { image: principe, link: "https://black-box-nine.vercel.app" },
+  { image: problemaSeu, link: "https://black-box-nine.vercel.app" },
+  { image: seteNiveis, link: "https://black-box-nine.vercel.app" },
+  { image: segredosLobo, link: "https://black-box-nine.vercel.app" },
+  { image: pensaEnriquece, link: "https://black-box-nine.vercel.app" },
+  { image: sapiens, link: "https://black-box-nine.vercel.app" },
+  { image: scrum, link: "https://black-box-nine.vercel.app" },
+  { image: voceUniverso, link: "https://black-box-nine.vercel.app" },
 ];
 
 // Componente SlideBar
@@ -58,7 +113,13 @@ const SlideBar = () => {
       }
     };
 
-    const resizeObserver = new ResizeObserver(updateWidth);
+    // Debounce para evitar cálculos excessivos
+    const debounceUpdateWidth = () => {
+      clearTimeout(updateWidth.timeout);
+      updateWidth.timeout = setTimeout(updateWidth, 100);
+    };
+
+    const resizeObserver = new ResizeObserver(debounceUpdateWidth);
     if (carousel.current) resizeObserver.observe(carousel.current);
     if (innerCarousel.current) resizeObserver.observe(innerCarousel.current);
 
@@ -112,23 +173,21 @@ const SlideBar = () => {
             ref={innerCarousel}
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
+            dragElastic={0.1} // Suaviza o arraste
             className="inner"
-            animate={{
-              x: [0, -width, 0], // Movimento automático para esquerda e volta
-            }}
             transition={{
-              duration: 30, // Velocidade do movimento automático
-              ease: "linear",
-              repeat: Infinity, // Repetição infinita
+              type: "spring", // Suavização ao soltar
+              stiffness: 300,
+              damping: 30,
             }}
           >
             {slideData.map((slide, index) => (
-              <motion.div className="item" key={index}>
+              <Item as={motion.div} className="item" key={index}>
                 <img src={slide.image} alt={`Imagem ${index + 1}`} />
                 <Button onClick={() => handleClick(slide.link)}>
                   Acessar Link
                 </Button>
-              </motion.div>
+              </Item>
             ))}
           </motion.div>
         </motion.div>

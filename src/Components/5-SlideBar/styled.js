@@ -169,4 +169,17 @@ export const ContainerHeader = styled.div`
     margin-top: 0.5rem;
   }
 
-`
+`;
+
+export const Item = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    border-radius: 8px; /* Opcional: adiciona bordas arredondadas */
+  }
+`;
