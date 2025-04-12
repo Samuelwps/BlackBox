@@ -13,18 +13,18 @@ import { motion } from "framer-motion";
 import { GiJigsawBox } from "react-icons/gi";
 
 // Importação de imagens
-import image1 from "../../images/Ebooks/48MinBook.png";
-import image2 from "../../images/Ebooks/FBIMinBook.png";
-import image3 from "../../images/Ebooks/FinaceiraMinBook.png";
-import image4 from "../../images/Ebooks/PoderMinBook.png";
-import image5 from "../../images/Ebooks/MindSet.png";
-import image6 from "../../images/Ebooks/7Habitos.png";
-import image7 from "../../images/Ebooks/ComoFazerAmigos.png";
-import image8 from "../../images/Ebooks/HabitosAtomicos.png";
-import image9 from "../../images/Ebooks/poderdoagora.png";
-import image10 from "../../images/Ebooks/autoresponsabilidade.png";
-import image11 from "../../images/Ebooks/RapidoDevagar.png";
-import image12 from "../../images/Ebooks/HabitoMinBook.png";
+import image1 from "../../images/Ebooks/48MinBook.webp";
+import image2 from "../../images/Ebooks/FBIMinBook.webp";
+import image3 from "../../images/Ebooks/FinaceiraMinBook.webp";
+import image4 from "../../images/Ebooks/PoderMinBook.webp";
+import image5 from "../../images/Ebooks/MindSet.webp";
+import image6 from "../../images/Ebooks/7Habitos.webp";
+import image7 from "../../images/Ebooks/ComoFazerAmigos.webp";
+import image8 from "../../images/Ebooks/HabitosAtomicos.webp";
+import image9 from "../../images/Ebooks/poderdoagora.webp";
+import image10 from "../../images/Ebooks/autoresponsabilidade.webp";
+import image11 from "../../images/Ebooks/RapidoDevagar.webp";
+import image12 from "../../images/Ebooks/HabitoMinBook.webp";
 
 // Dados do carrossel
 const slideData = [

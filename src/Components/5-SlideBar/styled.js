@@ -9,6 +9,7 @@ export const ContainerALl = styled.div`
   justify-content: center;
   flex-direction: column;
   
+
 `;
 
 export const Container = styled.div`
@@ -30,16 +31,15 @@ export const Container = styled.div`
 
   .inner {
     display: flex;
-    overflow: visible; /* ✅ Permite que o botão fique visível */
+    overflow: visible;
   }
 
   .item {
     min-height: 150px;
     min-width: 280px;
-
     display: flex;
     flex-direction: column;
-    align-items: center; /* ✅ Centraliza o botão */
+    align-items: center;
 
     @media (min-width: 768px) {
       min-height: 200px;
@@ -55,15 +55,25 @@ export const Container = styled.div`
   .item img {
     width: 80%;
     height: 80%;
-
     border-radius: 12px;
     pointer-events: none;
   }
 
   .carousel {
-    cursor: grab;
-    overflow: hidden;
-    width: 100%; /* ✅ Faz o carrossel ocupar toda a largura disponível */
+  cursor: grab;
+  overflow-x: hidden; /* 👈 Aqui resolve o scroll indesejado */
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+    /* A mágica do fade nas laterais */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-in;
+
+    /* Deixa a transição mais fluida visualmente */
+    transition: mask-image 0.3s ease-in-out;
   }
 `;
 
