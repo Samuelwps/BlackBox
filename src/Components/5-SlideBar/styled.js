@@ -8,13 +8,20 @@ export const ContainerALl = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+  margin-bottom: 2rem; /* Margem padrão para dispositivos menores */
 
+  @media (max-width: 768px) {
+    margin-bottom: -8rem; /* Margem negativa para versão mobile */
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: -4rem; /* Margem negativa para versão desktop */
+  }
 `;
 
 export const Container = styled.div`
   width: 80%;
-  margin-top: 3%;
+  margin-top: 1rem; /* Reduz a distância entre o título e o SlideBar */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -32,6 +39,7 @@ export const Container = styled.div`
   .inner {
     display: flex;
     overflow: visible;
+    gap: 2px; /* Reduzido para o mínimo possível */
   }
 
   .item {
@@ -60,11 +68,11 @@ export const Container = styled.div`
   }
 
   .carousel {
-  cursor: grab;
-  overflow-x: hidden; /* 👈 Aqui resolve o scroll indesejado */
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
+    cursor: grab;
+    overflow-x: hidden; /* 👈 Aqui resolve o scroll indesejado */
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 
     /* A mágica do fade nas laterais */
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
@@ -148,7 +156,7 @@ export const ContainerHeader = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2rem; /* Reduz a distância entre o título e a divisão */
   text-align: center;
 
   h1 {
@@ -157,18 +165,17 @@ export const ContainerHeader = styled.div`
     color: var(--Red);
   }
 
-  span{
+  span {
     font-size: 1.5rem;
     color: var(--White);
     margin-top: 0.5rem;
   }
 
-  p{
+  p {
     font-size: 1.2rem;
     color: var(--White);
     margin-top: 0.5rem;
   }
-
 `;
 
 export const Item = styled.div`

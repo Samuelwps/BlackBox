@@ -58,6 +58,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-items: center;
+  align-items: center;
 
   font-family: "PT Sans", sans-serif; /* Fonte principal */
   font-weight: 400;

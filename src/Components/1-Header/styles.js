@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const ContainerLogo = styled.div`
   max-height: 3rem;
-  width: 100%;
+  width: 100vw;
 
   background-color: red;
   display: flex;

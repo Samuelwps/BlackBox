@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/", // Define o caminho base para produção
   plugins: [react()],
   assetsInclude: ["**/*.webp"], // Inclua o formato .webp como ativo
 });
