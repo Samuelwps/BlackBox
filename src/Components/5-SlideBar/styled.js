@@ -21,7 +21,7 @@ export const ContainerALl = styled.div`
 
 export const Container = styled.div`
   width: 80%;
-  margin-top: 1rem; /* Reduz a distância entre o título e o SlideBar */
+  margin-top: 1rem; /* Margem padrão */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   @media (max-width: 768px) {
-    width: 80%;
+    margin-top: -4rem; /* Margem negativa para versão mobile */
   }
 
   @media (max-width: 1024px) {
