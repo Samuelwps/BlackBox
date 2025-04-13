@@ -113,16 +113,7 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
           >
             {slides.map((slide, index) => (
               <Item as={motion.div} className="item" key={index}>
-                <img
-                  src={slide.image}
-                  alt={`Imagem ${index + 1}`}
-                  style={{
-                    width: "350px",
-                    height: "450px",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                  }}
-                />
+                <img src={slide.image} alt={`Imagem ${index + 1}`} />
                 <Button onClick={() => window.open(slide.link, "_blank")}>
                   Acessar Link
                 </Button>
