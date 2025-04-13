@@ -5,8 +5,8 @@ import sharp from "sharp";
 // Caminho da pasta onde estão as imagens
 const folderPath = path.join(process.cwd(), "src/images/Ebooks");
 
-// Cria uma nova pasta para salvar as imagens convertidas
-const outputFolder = path.join(folderPath, "converted");
+// Cria uma nova pasta para salvar as imagens redimensionadas
+const outputFolder = path.join(folderPath, "resized");
 if (!fs.existsSync(outputFolder)) {
   fs.mkdirSync(outputFolder);
 }
@@ -29,15 +29,15 @@ fs.readdir(folderPath, (err, files) => {
       const inputPath = path.join(folderPath, file);
       const outputPath = path.join(outputFolder, `${fileName}.webp`);
 
-      // Converte a imagem para .webp
+      // Redimensiona a imagem para 600x1000 pixels
       sharp(inputPath)
-        .webp({ quality: 80 })
+        .resize(600, 1000, { fit: "cover" })
         .toFile(outputPath)
         .then(() => {
-          console.log(`Convertido com sucesso: ${file} -> ${fileName}.webp`);
+          console.log(`Redimensionado com sucesso: ${file} -> ${fileName}.webp`);
         })
         .catch(err => {
-          console.error(`Erro ao converter ${file}:`, err);
+          console.error(`Erro ao redimensionar ${file}:`, err);
         });
     } else {
       console.log(`Arquivo ignorado (não é uma imagem válida): ${file}`);

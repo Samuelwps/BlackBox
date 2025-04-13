@@ -75,8 +75,20 @@ export const Container = styled.div`
     flex-wrap: nowrap;
 
     /* A mágica do fade nas laterais */
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
     mask-composite: exclude;
     -webkit-mask-composite: destination-in;
 
@@ -149,9 +161,8 @@ export const Lines = styled.div`
   background-color: var(--White);
 `;
 
-
 export const ContainerHeader = styled.div`
-  font-weight: normal;  
+  font-weight: normal;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -11,7 +11,13 @@ import {
   Item,
 } from "./styled.js";
 import { motion } from "framer-motion";
-import { FaBrain, FaUsers, FaMoneyBillWave, FaClock, FaBook } from "react-icons/fa";
+import {
+  FaBrain,
+  FaUsers,
+  FaMoneyBillWave,
+  FaClock,
+  FaBook,
+} from "react-icons/fa";
 
 // Importação de imagens
 // Importação de imagens
@@ -48,7 +54,7 @@ import ladoDificil from "../../images/Ebooks/lado_dificil.webp";
 import loboWallStreet from "../../images/Ebooks/lobo_wallstreet.webp";
 import principe from "../../images/Ebooks/principe.webp";
 import problemaSeu from "../../images/Ebooks/problema_seu.webp";
-import seteNiveis from "../../images/Ebooks/7_niveis.webp";
+import seteNiveis from "../../images/Ebooks/7_niveis.png";
 import segredosLobo from "../../images/Ebooks/segredos_lobo.webp";
 import pensaEnriquece from "../../images/Ebooks/pensa_enriquece.webp";
 import sapiens from "../../images/Ebooks/sapiens.webp";
@@ -63,7 +69,9 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
   useEffect(() => {
     const updateWidth = () => {
       if (carousel.current && innerCarousel.current) {
-        setWidth(innerCarousel.current.scrollWidth - carousel.current.offsetWidth);
+        setWidth(
+          innerCarousel.current.scrollWidth - carousel.current.offsetWidth
+        );
       }
     };
     const resizeObserver = new ResizeObserver(updateWidth);
@@ -77,7 +85,11 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
     <ContainerALl>
       <ContainerInLine>
         <Lines />
-        <motion.div className="IconWrapper" animate={{ y: [-10, 10, -10] }} transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+        <motion.div
+          className="IconWrapper"
+          animate={{ y: [-10, 10, -10] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+        >
           <Icon size="3rem" color={iconColor} />
         </motion.div>
         <Lines />
@@ -87,12 +99,33 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
         <p>{description}</p>
       </ContainerHeader>
       <Container>
-        <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
-          <motion.div ref={innerCarousel} drag="x" dragConstraints={{ right: 0, left: -width }} dragElastic={0.1} className="inner">
+        <motion.div
+          ref={carousel}
+          className="carousel"
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <motion.div
+            ref={innerCarousel}
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            dragElastic={0.1}
+            className="inner"
+          >
             {slides.map((slide, index) => (
               <Item as={motion.div} className="item" key={index}>
-                <img src={slide.image} alt={`Imagem ${index + 1}`} />
-                <Button onClick={() => window.open(slide.link, "_blank")}>Acessar Link</Button>
+                <img
+                  src={slide.image}
+                  alt={`Imagem ${index + 1}`}
+                  style={{
+                    width: "350px",
+                    height: "450px",
+                    objectFit: "cover",
+                    borderRadius: "8px",
+                  }}
+                />
+                <Button onClick={() => window.open(slide.link, "_blank")}>
+                  Acessar Link
+                </Button>
               </Item>
             ))}
           </motion.div>
@@ -155,15 +188,52 @@ const otherSlides = [
 // Exportação dos SlideBars
 const SlideBars = () => {
   const sections = [
-    { title: "Desenvolvimento Pessoal", description: "Transforme sua vida com hábitos e mentalidades poderosas.", slides: personalDevelopmentSlides, icon: FaBrain, iconColor: "#FF5733" },
-    { title: "Liderança e Persuasão", description: "Aprenda a liderar e influenciar com maestria.", slides: leadershipSlides, icon: FaUsers, iconColor: "#3498DB" },
-    { title: "Finanças e Negócios", description: "Domine suas finanças e conquiste o sucesso financeiro.", slides: financeSlides, icon: FaMoneyBillWave, iconColor: "#28A745" },
-    { title: "Produtividade", description: "Aumente sua eficiência e alcance seus objetivos.", slides: productivitySlides, icon: FaClock, iconColor: "#FFC107" },
-    { title: "Outros Interesses", description: "Explore temas fascinantes e expanda seu conhecimento.", slides: otherSlides, icon: FaBook, iconColor: "#6F42C1" },
+    {
+      title: "Desenvolvimento Pessoal",
+      description: "Transforme sua vida com hábitos e mentalidades poderosas.",
+      slides: personalDevelopmentSlides,
+      icon: FaBrain,
+      iconColor: "#FF5733",
+    },
+    {
+      title: "Liderança e Persuasão",
+      description: "Aprenda a liderar e influenciar com maestria.",
+      slides: leadershipSlides,
+      icon: FaUsers,
+      iconColor: "#3498DB",
+    },
+    {
+      title: "Finanças e Negócios",
+      description: "Domine suas finanças e conquiste o sucesso financeiro.",
+      slides: financeSlides,
+      icon: FaMoneyBillWave,
+      iconColor: "#28A745",
+    },
+    {
+      title: "Produtividade",
+      description: "Aumente sua eficiência e alcance seus objetivos.",
+      slides: productivitySlides,
+      icon: FaClock,
+      iconColor: "#FFC107",
+    },
+    {
+      title: "Outros Interesses",
+      description: "Explore temas fascinantes e expanda seu conhecimento.",
+      slides: otherSlides,
+      icon: FaBook,
+      iconColor: "#6F42C1",
+    },
   ];
 
   return sections.map((section, index) => (
-    <SlideBar key={index} title={section.title} description={section.description} slides={section.slides} icon={section.icon} iconColor={section.iconColor} />
+    <SlideBar
+      key={index}
+      title={section.title}
+      description={section.description}
+      slides={section.slides}
+      icon={section.icon}
+      iconColor={section.iconColor}
+    />
   ));
 };
 
