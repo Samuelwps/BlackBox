@@ -230,6 +230,7 @@ export const SectionBook = styled.div`
       width: 100%;
       height: auto;
       border-radius: 8px;
+      filter: drop-shadow(0px 20px 15px rgb(0, 0, 0));
     }
   }
 
@@ -330,7 +331,7 @@ export const SectionBook = styled.div`
             color: var(--White);
             margin-right: 1rem;
             font-size: 1.5rem;
-           transition: 0.3s;
+            transition: 0.3s;
           }
 
           &:hover {

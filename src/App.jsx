@@ -15,7 +15,10 @@ import SlideBar from "./Components/5-SlideBar";
 import Home from "./Components/6-Home";
 
 import Questions from "./Components/7-Questions";
+
 import Copyright from "./Components/Copyright";
+
+import PromotionalBanner from "./Components/8-Amazon";
 
 function App() {
   return (
@@ -27,7 +30,8 @@ function App() {
       <SlideBar />
       <Home />
       <Questions />
-      <Copyright/>
+      <Copyright />
+      <PromotionalBanner />
     </>
   );
 }
