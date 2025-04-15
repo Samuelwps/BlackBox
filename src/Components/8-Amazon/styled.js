@@ -5,10 +5,13 @@ export const PromotionalBannerContainer = styled(motion.div)`
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #ff4d4d; /* Vermelho vibrante */
-  color: #ffffff; /* Branco */
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba( var(--Red), 0.35 ); /* Usando a variável de cor */
+  
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: var(--White); /* Branco */
   padding: 20px;
   max-width: 300px;
   z-index: 1000;
@@ -42,8 +45,8 @@ export const Description = styled.p`
 `;
 
 export const ActionButton = styled.button`
-  background-color: #ffffff; /* Branco */
-  color: #ff4d4d; /* Vermelho vibrante */
+  background-color: var(--White); /* Branco */
+  color: var(--Red); /* Vermelho vibrante */
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
