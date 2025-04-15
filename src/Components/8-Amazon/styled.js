@@ -68,7 +68,7 @@ export const ProgressBar = styled.div`
   top: 0;
   left: 0;
   height: 5px; /* Altura da barra */
-  background-color: #ffffff; /* Cor branca */
+  background-color: var(--Red); /* Cor branca */
   transition: width 0.1s linear; /* Transição suave */
   border-top-left-radius: 12px; /* Arredondamento no canto esquerdo */
   border-top-right-radius: 12px; /* Arredondamento no canto direito */

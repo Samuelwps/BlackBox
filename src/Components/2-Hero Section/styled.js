@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
+  width:100%;
   margin: 2rem auto;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
+  background-color: transparent;
 `;
 
 export const ActionHero = styled.div`

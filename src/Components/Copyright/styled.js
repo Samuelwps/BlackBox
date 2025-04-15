@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Footer = styled.footer`
+  width: 100%;
   text-align: center;
   font-size: 14px;
   color: var(--White);
   padding: 20px;
-  background-color: var(--gray-850);
+  /* background-color: var(--gray-850); */
 `;
 
 export const SocialIcons = styled.div`

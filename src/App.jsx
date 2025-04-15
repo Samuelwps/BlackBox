@@ -1,39 +1,21 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PrivacyPolicy from "./Pages/Privacy";
+import Home from "./Pages/Home"; // Exemplo de página inicial
 
 import "./App.css";
 
 import Header from "./Components/1-Header";
 
-import HeroSection from "./Components/2-Hero Section";
-
-import WhoAre from "./Components/3-WhoAre";
-
-import Reviews from "./Components/4-Reviews";
-
-import SlideBar from "./Components/5-SlideBar";
-
-import Home from "./Components/6-Home";
-
-import Questions from "./Components/7-Questions";
-
-import Copyright from "./Components/Copyright";
-
-import PromotionalBanner from "./Components/8-Amazon";
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Header />
-      <HeroSection />
-      <WhoAre />
-      <Reviews />
-      <SlideBar />
-      <Home />
-      <Questions />
-      <Copyright />
-      <PromotionalBanner />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

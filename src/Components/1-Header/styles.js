@@ -1,26 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1440px;
-
+  width: 100%;
   margin: 0 auto;
-
   padding: 2rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid var(--gray-800);
 `;
 
 export const ContainerLogo = styled.div`
   max-height: 3rem;
-  width: 100vw;
-
+  width: 100%;
   background-color: red;
   display: flex;
   justify-content: center;
-
   align-items: center;
 
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Faz a imagem se comportar como cover */
@@ -38,12 +36,13 @@ export const HeaderContainer = styled.header`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  left: 0; /* Garante que o header comece no canto esquerdo */
   z-index: 1000;
 `;
 
 export const Logo = styled.div`
   font-size: 1.5rem;
-  color: var(--Red); /* Dourado */
+  color: var(--Red); /* Cor do texto */
   margin-right: 1rem;
   display: flex;
   align-items: center;
