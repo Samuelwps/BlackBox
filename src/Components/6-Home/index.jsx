@@ -3,17 +3,17 @@ import {
   SectionBook,
   Price,
   ContainerInLine,
-  Lines, // Já está sendo importado de "./styles"
+  Lines,
   Stars,
-  // Stars1,
+  DisabledButton, // Importa o botão desativado estilizado
 } from "./styles";
 import { BsBookHalf } from "react-icons/bs";
+import { MdLock } from "react-icons/md"; // Importa o ícone de cadeado
 import { motion } from "framer-motion";
 
 import imageFBI from "../../images/FBI.png";
 import imagePER from "../../images/persuasão.png";
 import imageGUE from "../../images/guerra.png";
-
 
 import { MdGetApp } from "react-icons/md";
 
@@ -92,14 +92,10 @@ function Home() {
                     <del>DE {book.oldPrice}</del>
                     <h3>POR</h3>
                     <h2>{book.newPrice}</h2>
-                    <button
-                      className="btn btn-3"
-                      type="button"
-                      onClick={() => redirecioneComHistorico(book.link)}
-                    >
-                      <MdGetApp size="2rem" className="IconDownload" />
-                      QUERO MEU EBOOK AGORA!
-                    </button>
+                    <DisabledButton>
+                      <MdLock />
+                      EM BREVE
+                    </DisabledButton>
                   </Price>
                 </div>
               </li>

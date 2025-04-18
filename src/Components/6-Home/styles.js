@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { MdLock } from "react-icons/md";
 
 // Animação das estrelas
 const animStars = keyframes`
@@ -298,7 +299,7 @@ export const SectionBook = styled.div`
           font-weight: 500;
         }
 
-        button {
+        /* button {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -344,7 +345,7 @@ export const SectionBook = styled.div`
               color: var(--Green);
             }
           }
-        }
+        } */
       }
     }
   }
@@ -380,7 +381,7 @@ export const Price = styled.div`
     font-weight: 900;
   }
 
-  button {
+  /* button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,7 +401,7 @@ export const Price = styled.div`
     &:hover {
       background-color: var(--DarkRed);
     }
-  }
+  } */
 `;
 
 // ===================== Container Inline =====================
@@ -421,4 +422,32 @@ export const Lines = styled.div`
   flex: 1; /* Faz com que a linha ocupe o máximo de espaço disponível */
   height: 2px;
   background-color: var(--White);
+`;
+
+export const DisabledButton = styled.button`
+  background-color: var(--Gray);
+  color: var(--LightGray);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: none; /* Remove transições */
+  pointer-events: none; /* Desativa interações */
+
+  &:hover {
+    background-color: var(--Gray); /* Mantém a cor no hover */
+    transform: none; /* Remove transformações */
+    box-shadow: none; /* Remove sombras */
+  }
+
+  svg {
+    margin-right: 8px;
+    font-size: 1.5rem;
+  }
 `;
