@@ -33,6 +33,9 @@ export const Card = styled.div`
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante alinhamento do botão no final */
   transition: transform 0.3s ease;
 
   &:hover {
@@ -49,6 +52,12 @@ export const Card = styled.div`
   h3 {
     font-size: 1.5rem;
     color: var(--White);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--Gray);
     margin-bottom: 1rem;
   }
 `;
@@ -67,6 +76,7 @@ export const Button = styled.a`
   justify-content: center;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-top: auto; /* Garante que o botão fique no final */
 
   &:hover {
     background-color: var(--Green);
