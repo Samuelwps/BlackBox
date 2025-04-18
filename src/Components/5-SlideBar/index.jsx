@@ -21,46 +21,44 @@ import {
 } from "react-icons/fa";
 
 // Importação de imagens
-// Importação de imagens
 import image1 from "../../images/Ebooks/48min.webp";
-import image2 from "../../images/Ebooks/fbi.webp";
-import image3 from "../../images/Ebooks/financeira.webp";
-import image4 from "../../images/Ebooks/poder.webp";
-import image5 from "../../images/Ebooks/mindset.webp";
-// import image6 from "../../images/Ebooks/7habitos.webp";
 import image7 from "../../images/Ebooks/amigos.webp";
-import image8 from "../../images/Ebooks/habitos_atomicos.webp";
-import image9 from "../../images/Ebooks/poder_agora.webp";
 import image10 from "../../images/Ebooks/autoresponsabilidade.webp";
-import rapidoDevagar from "../../images/Ebooks/rapido_devagar.webp";
-import habito from "../../images/Ebooks/habito.webp";
-import produtivo from "../../images/Ebooks/produtivo.webp";
+import caminhoRiqueza from "../../images/Ebooks/caminho_riqueza.webp";
+import cerebroPerformance from "../../images/Ebooks/o_cerebro.webp";
 import convencer90s from "../../images/Ebooks/convencer_90s.webp";
 import dinheiroFeliz from "../../images/Ebooks/dinheiro_feliz.webp";
-import milMilhao from "../../images/Ebooks/mil_milhao.webp";
 import elonMusk from "../../images/Ebooks/elon_musk.webp";
-import fortunaAcoes from "../../images/Ebooks/fortuna_acoes.webp";
-import formigas from "../../images/Ebooks/formigas.webp";
-import inteligenciaEmocional from "../../images/Ebooks/inteligencia_emocional.webp";
-import emocionalPratica from "../../images/Ebooks/emocional_pratica.webp";
-import lideranca from "../../images/Ebooks/lideranca.webp";
-import mastersSex from "../../images/Ebooks/masters_sex.webp";
-import maximizePotencial from "../../images/Ebooks/maximize_potencial.webp";
-import mestrePersuasao from "../../images/Ebooks/mestre_persuasao.webp";
-import caminhoRiqueza from "../../images/Ebooks/caminho_riqueza.webp";
-import cerebroPerformance from "../../images/Ebooks/cerebro_performance.webp";
-import fimProcrastinacao from "../../images/Ebooks/fim_procrastinacao.webp";
-import jogoInfinito from "../../images/Ebooks/jogo_infinito.webp";
-import ladoDificil from "../../images/Ebooks/lado_dificil.webp";
-import loboWallStreet from "../../images/Ebooks/lobo_wallstreet.webp";
-import principe from "../../images/Ebooks/principe.webp";
-import problemaSeu from "../../images/Ebooks/problema_seu.webp";
-import seteNiveis from "../../images/Ebooks/7_niveis.png";
-import segredosLobo from "../../images/Ebooks/segredos_lobo.webp";
-import pensaEnriquece from "../../images/Ebooks/pensa_enriquece.webp";
+import emocionalPratica from "../../images/Ebooks/INTELIGENCIA_EMOCIONAL.webp";
+import fimProcrastinacao from "../../images/Ebooks/FIM_PROCASTINACAO.webp";
+import fbi from "../../images/Ebooks/fbi.webp";
+import formigas from "../../images/Ebooks/FORMIGAS.webp";
+import fortunaAcoes from "../../images/Ebooks/FAÇA_FORTUNAS_COM_AÇOES.webp";
+import habito from "../../images/Ebooks/O_PODER_DO_HABITO.webp";
+import image8 from "../../images/Ebooks/HABITOS_ATOMICOS.webp";
+import image3 from "../../images/Ebooks/financeira.webp";
+import image5 from "../../images/Ebooks/mindset.webp";
+import image9 from "../../images/Ebooks/O_PODER_DO_AGORA.webp";
+import image4 from "../../images/Ebooks/poder.webp";
+import jogoInfinito from "../../images/Ebooks/O_JOGO_INFINITO.webp";
+import ladoDificil from "../../images/Ebooks/O_LADO_DIFICIL_DA_SITUAÇAO.webp";
+import lideranca from "../../images/Ebooks/ALEXANDRE_FERGURSON.png";
+import loboWallStreet from "../../images/Ebooks/O_LOBO_ALSSTRET.webp";
+import mastersSex from "../../images/Ebooks/SEX.png";
+import maximizePotencial from "../../images/Ebooks/MYLES_MUNROE.webp";
+import mestrePersuasao from "../../images/Ebooks/MESTRE_DA_PERSUASAO.webp";
+import milMilhao from "../../images/Ebooks/MIL_AO_MILHAO.webp";
+import pensaEnriquece from "../../images/Ebooks/QUEM_PENSA_ENRIQUECE.webp";
+import principe from "../../images/Ebooks/O_PRINCIPE.webp";
+import problemaSeu from "../../images/Ebooks/O_PROBLEMA_e_SEU.webp";
+import produtivo from "../../images/Ebooks/COMO_SER_MAIS_PRODUTIVO.webp";
+import rapidoDevagar from "../../images/Ebooks/RAPIDO_E_DEVAGAR.webp";
 import sapiens from "../../images/Ebooks/sapiens.webp";
 import scrum from "../../images/Ebooks/scrum.webp";
-import voceUniverso from "../../images/Ebooks/voce_universo.webp";
+import segredosLobo from "../../images/Ebooks/OS_SEGREDOS_LOBOS.webp";
+import seteNiveis from "../../images/Ebooks/7_niveis.png";
+import voceUniverso from "../../images/Ebooks/VOCE_E_UNIVERSO.png";
+
 // Função genérica para criar SlideBars
 const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
   const [width, setWidth] = useState(0);
@@ -141,8 +139,7 @@ const personalDevelopmentSlides = [
   { image: image8, link: "https://black-box-nine.vercel.app" }, // Hábitos Atômicos
   { image: image9, link: "https://black-box-nine.vercel.app" }, // O Poder do Agora
   { image: image5, link: "https://black-box-nine.vercel.app" }, // Mindset
-  { image: emocionalPratica, link: "https://black-box-nine.vercel.app" }, // Inteligência Emocional na Prática
-  { image: inteligenciaEmocional, link: "https://black-box-nine.vercel.app" }, // Inteligência Emocional
+  { image: emocionalPratica, link: "https://black-box-nine.vercel.app" }, // Inteligência Emocional na Prática 
   { image: image7, link: "https://black-box-nine.vercel.app" }, // Como Fazer Amigos
   { image: image10, link: "https://black-box-nine.vercel.app" }, // Autorresponsabilidade
   { image: habito, link: "https://black-box-nine.vercel.app" }, // O Poder do Hábito

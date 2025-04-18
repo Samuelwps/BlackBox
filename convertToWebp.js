@@ -11,36 +11,56 @@ if (!fs.existsSync(outputFolder)) {
   fs.mkdirSync(outputFolder);
 }
 
-// Lista os arquivos na pasta
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error("Erro ao ler a pasta:", err);
-    return;
-  }
-
-  console.log("Arquivos encontrados:", files);
-
-  files.forEach(file => {
-    const ext = path.extname(file).toLowerCase();
-    const fileName = path.basename(file, ext);
-
-    // Verifica se o arquivo é uma imagem válida
-    if ([".png", ".jpg", ".jpeg", ".webp"].includes(ext)) {
-      const inputPath = path.join(folderPath, file);
-      const outputPath = path.join(outputFolder, `${fileName}.webp`);
-
-      // Converte a imagem para .webp
-      sharp(inputPath)
-        .webp({ quality: 80 })
-        .toFile(outputPath)
-        .then(() => {
-          console.log(`Convertido com sucesso: ${file} -> ${fileName}.webp`);
-        })
-        .catch(err => {
-          console.error(`Erro ao converter ${file}:`, err);
-        });
-    } else {
-      console.log(`Arquivo ignorado (não é uma imagem válida): ${file}`);
+// Função recursiva para processar pastas e subpastas
+function processFolder(folder, relativePath = "") {
+  fs.readdir(folder, { withFileTypes: true }, (err, entries) => {
+    if (err) {
+      console.error("Erro ao ler a pasta:", err);
+      return;
     }
+
+    entries.forEach(entry => {
+      const entryPath = path.join(folder, entry.name);
+      const entryRelativePath = path.join(relativePath, entry.name);
+
+      if (entry.isDirectory()) {
+        // Processa subpastas
+        processFolder(entryPath, entryRelativePath);
+      } else {
+        const ext = path.extname(entry.name).toLowerCase();
+        const fileName = path.basename(entry.name, ext);
+
+        // Verifica se o arquivo é uma imagem válida
+        if ([".png", ".jpg", ".jpeg", ".webp"].includes(ext)) {
+          const outputDir = path.join(outputFolder, relativePath);
+          const outputPath = path.join(outputDir, `${fileName}.webp`);
+
+          // Cria a subpasta correspondente, se necessário
+          if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+          }
+
+          // Converte a imagem para .webp
+          sharp(entryPath)
+            .webp({ quality: 80 })
+            .toFile(outputPath)
+            .then(() => {
+              console.log(
+                `Convertido com sucesso: ${entry.name} -> ${fileName}.webp`
+              );
+            })
+            .catch(err => {
+              console.error(`Erro ao converter ${entry.name}:`, err);
+            });
+        } else {
+          console.log(
+            `Arquivo ignorado (não é uma imagem válida): ${entry.name}`
+          );
+        }
+      }
+    });
   });
-});
+}
+
+// Inicia o processamento a partir da pasta principal
+processFolder(folderPath);
