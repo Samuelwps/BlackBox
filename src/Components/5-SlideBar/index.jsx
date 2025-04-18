@@ -29,7 +29,7 @@ import cerebroPerformance from "../../images/Ebooks/o_cerebro.webp";
 import convencer90s from "../../images/Ebooks/convencer_90s.webp";
 import dinheiroFeliz from "../../images/Ebooks/dinheiro_feliz.webp";
 import elonMusk from "../../images/Ebooks/elon_musk.webp";
-import emocionalPratica from "../../images/Ebooks/INTELIGENCIA_EMOCIONAL.webp";
+import emocionalPratica from "../../images/Ebooks/inteligencia_emocional.webp";
 import fimProcrastinacao from "../../images/Ebooks/FIM_PROCASTINACAO.webp";
 import fbi from "../../images/Ebooks/fbi.webp";
 import formigas from "../../images/Ebooks/FORMIGAS.webp";
