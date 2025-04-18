@@ -114,6 +114,33 @@ export const ActionHero = styled.div`
     opacity: 1;
     transform: scale(1, 1);
   }
+
+  .btn-overlay {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .lock-overlay {
+    position: absolute;
+    top: 10px; /* Adjusted to center vertically within the button */
+    left: 0;
+    width: 100%;
+    height: 90%; /* Matches the button's exact height */
+    background: rgba(50, 50, 50, 0.8); /* Stronger gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Matches the button's border-radius */
+    z-index: 2;
+    pointer-events: none; /* Prevents interaction with the overlay */
+    box-sizing: border-box; /* Ensures padding and border are included in dimensions */
+  }
+
+  .lock-icon {
+    font-size: 1.5rem;
+    color: var(--White);
+  }
 `;
 
 export const ImageHero = styled.div`

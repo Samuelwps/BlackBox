@@ -20,6 +20,8 @@ import Copyright from "./Components/Copyright";
 
 import PromotionalBanner from "./Components/8-Amazon";
 
+import FreeReading from "./Components/FreeReading";
+
 function App() {
   return (
     <>
@@ -30,6 +32,7 @@ function App() {
       <SlideBar />
       <Home />
       <Questions />
+      <FreeReading />
       <Copyright />
       <PromotionalBanner />
     </>

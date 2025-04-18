@@ -17,6 +17,7 @@ import {
   FaMoneyBillWave,
   FaClock,
   FaBook,
+  FaLock,
 } from "react-icons/fa";
 
 // Importação de imagens
@@ -25,7 +26,7 @@ import image1 from "../../images/Ebooks/48min.webp";
 import image2 from "../../images/Ebooks/fbi.webp";
 import image3 from "../../images/Ebooks/financeira.webp";
 import image4 from "../../images/Ebooks/poder.webp";
-import image5 from "../../images/Ebooks/mindset_temp.webp";
+import image5 from "../../images/Ebooks/mindset.webp";
 // import image6 from "../../images/Ebooks/7habitos.webp";
 import image7 from "../../images/Ebooks/amigos.webp";
 import image8 from "../../images/Ebooks/habitos_atomicos.webp";
@@ -114,8 +115,17 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
             {slides.map((slide, index) => (
               <Item as={motion.div} className="item" key={index}>
                 <img src={slide.image} alt={`Imagem ${index + 1}`} />
-                <Button onClick={() => window.open(slide.link, "_blank")}>
-                  Acessar Link
+                <Button
+                  disabled
+                  style={{
+                    cursor: "not-allowed",
+                    opacity: 0.6,
+                    backgroundColor: "#ccc",
+                    color: "#555",
+                  }}
+                >
+                  <FaLock style={{ marginRight: "0.5rem" }} />
+                  Disponível em breve
                 </Button>
               </Item>
             ))}

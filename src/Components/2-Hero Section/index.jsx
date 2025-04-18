@@ -1,5 +1,5 @@
 import { ActionHero, Button, Container, ImageHero } from "./styled";
-import { FaCheck, FaDownload } from "react-icons/fa";
+import { FaCheck, FaDownload, FaLock } from "react-icons/fa";
 import { GiBurningBook } from "react-icons/gi";
 
 import ImageMembros from "../../images/membros.webp";
@@ -10,8 +10,8 @@ function HeroSection() {
     <Container>
       <ActionHero>
         <p className="gradiend">
-          <GiBurningBook style={{ color: "var(--Yellow)" }} /> TORNE-SE UMA REFERÊNCIA
-          E TRANSFORME SUA VIDA COM OS MELHORES EBOOKS!
+          <GiBurningBook style={{ color: "var(--Yellow)" }} /> TORNE-SE UMA
+          REFERÊNCIA E TRANSFORME SUA VIDA COM OS MELHORES EBOOKS!
         </p>
 
         <p className="description">
@@ -29,9 +29,14 @@ function HeroSection() {
         </p>
 
         <div className="box-3">
-          <div className="btn btn-three">
-            <FaDownload style={{ margin: "1rem", color: "var(--White)" }} />
-            BAIXAR EBOOK AGORA
+          <div className="btn-overlay">
+            <div className="btn btn-three">
+              <FaDownload style={{ margin: "1rem", color: "var(--White)" }} />
+              BAIXAR EBOOK AGORA
+            </div>
+            <div className="lock-overlay">
+              <FaLock className="lock-icon" />
+            </div>
           </div>
         </div>
 
