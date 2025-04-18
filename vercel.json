@@ -16,7 +16,18 @@
           "value": "X-Requested-With, Content-Type, Authorization"
         }
       ]
+    },
+    {
+      "source": "/downloads/(.*)",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment"
+        }
+      ]
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
