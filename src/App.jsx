@@ -1,13 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import PrivacyPolicy from "./Pages/Privacy";
-import Home from "./Pages/Home"; // Exemplo de página inicial
+import { useState } from "react";
 
 import "./App.css";
 
 import Header from "./Components/1-Header";
 
-<<<<<<< HEAD
 import HeroSection from "./Components/2-Hero Section";
 
 import WhoAre from "./Components/3-WhoAre";
@@ -40,17 +36,7 @@ function App() {
       <Copyright />
       <PromotionalBanner />
     </>
-=======
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-    </Router>
->>>>>>> 482102598fb8e8f7507026428f028c6b27b21604
   );
-};
+}
 
 export default App;

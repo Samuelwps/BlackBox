@@ -26,9 +26,8 @@
   /* Outras Cores */
   --Black: #111827;
   --White: #ffffff;
-  --LightGray: #f9f9f9; /* Cinza claro */
+  --LightGray: #e2e2e2;
   --Gray: #4b5563;
-  --DarkGray: #333333; /* Cinza escuro */
 
   /* Cor do Git */
   --gitcolor: #0d1117;

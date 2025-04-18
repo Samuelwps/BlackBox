@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerALl = styled.div`
-  width: 100%; /* Ajusta para a largura total da tela */
+  width: 100vw; /* Ajusta para a largura total da tela */
   padding: 0 16px; /* Adiciona um espaçamento lateral para melhor visualização em telas menores */
 
   display: flex;
