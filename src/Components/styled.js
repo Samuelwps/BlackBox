@@ -48,8 +48,8 @@ export const BlockText = styled.p`
 `;
 
 export const TransformationText = styled.p`
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bolder;
   color: #b91c1c;
 `;
 

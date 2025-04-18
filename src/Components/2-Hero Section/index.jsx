@@ -1,7 +1,7 @@
 import { ActionHero, Button, Container, ImageHero } from "./styled";
 import { FaCheck, FaClock, FaLock } from "react-icons/fa";
 import { GiBurningBook } from "react-icons/gi";
-import { CTAButton } from "../PainToPowerSection.styles"; // Import the styled button
+import { CTAButton } from "../styled"; // Import the styled button
 
 import ImageMembros from "../../images/membros.webp";
 import videoIntro from "../../videos/introvideo.mp4";

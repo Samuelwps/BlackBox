@@ -10,7 +10,7 @@ import {
   TransformationText,
   CallToAction,
   CTAButton,
-} from "./PainToPowerSection.styles";
+} from "./styled";
 import { FaClock } from "react-icons/fa"; // Import the clock icon
 
 const PainToPowerSection = () => {
@@ -20,21 +20,21 @@ const PainToPowerSection = () => {
       title: "Insatisfação Silenciosa",
       description:
         "A sensação de que algo está faltando, mesmo quando tudo parece bem.",
-      transformation: "Com autoconhecimento, você transforma dor em direção.",
+      transformation: "COM AUTOCONHECIMENTO, VOCÊ TRANSFORMA DOR EM DIREÇÃO.",
     },
     {
       icon: "😞",
       title: "Frustração Constante",
       description: "Metas não alcançadas e sonhos adiados pesam no coração.",
       transformation:
-        "Com desenvolvimento pessoal, você encontra clareza e ação.",
+        "COM DESENVOLVIMENTO PESSOAL, VOCÊ ENCONTRA CLAREZA E AÇÃO.",
     },
     {
       icon: "😶",
       title: "Vazio Existencial",
       description:
         "A falta de propósito que torna os dias monótonos e sem sentido.",
-      transformation: "Com propósito, você transforma vazio em significado.",
+      transformation: "COM PROPÓSITO, VOCÊ TRANSFORMA VAZIO EM SIGNIFICADO.",
     },
     // Add more blocks as needed...
   ];
