@@ -21,7 +21,7 @@ import {
 } from "react-icons/fa";
 
 // Importação de imagens
-import image1 from "../../images/Ebooks/48min.webp";
+import image1 from "../../images/Ebooks/48minBook.webp";
 import image7 from "../../images/Ebooks/amigos.webp";
 import image10 from "../../images/Ebooks/autoresponsabilidade.webp";
 import caminhoRiqueza from "../../images/Ebooks/caminho_riqueza.webp";
