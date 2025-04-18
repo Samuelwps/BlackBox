@@ -1,19 +1,22 @@
 import React from "react";
 import { Container, Title, Description, Cards, Card, Button } from "./styled";
 import { FaDownload } from "react-icons/fa";
+import OpoderdoHabito from "/src/images/Ebooks/habito.webp";
+import MindSet from "/src/images/Ebooks/mindset.webp";
+
 
 const freeBooks = [
   {
     id: 1,
     title: "O Poder do Hábito",
     image: "/src/images/Ebooks/habito.webp",
-    link: "/downloads/OPoderDoHabito.pdf", // Certifique-se de que o arquivo está na pasta correta
+    link: OpoderdoHabito, // Certifique-se de que o arquivo está na pasta correta
   },
   {
     id: 2,
     title: "Mindset: A Nova Psicologia do Sucesso",
     image: "/src/images/Ebooks/mindset.webp",
-    link: "/downloads/MindSet.pdf", // Certifique-se de que o arquivo está na pasta correta
+    link: MindSet, // Certifique-se de que o arquivo está na pasta correta
   },
 ];
 
