@@ -1,6 +1,7 @@
 import { ActionHero, Button, Container, ImageHero } from "./styled";
-import { FaCheck, FaDownload, FaLock } from "react-icons/fa";
+import { FaCheck, FaClock, FaLock } from "react-icons/fa";
 import { GiBurningBook } from "react-icons/gi";
+import { CTAButton } from "../PainToPowerSection.styles"; // Import the styled button
 
 import ImageMembros from "../../images/membros.webp";
 import videoIntro from "../../videos/introvideo.mp4";
@@ -30,13 +31,10 @@ function HeroSection() {
 
         <div className="box-3">
           <div className="btn-overlay">
-            <div className="btn btn-three">
-              <FaDownload style={{ margin: "1rem", color: "var(--White)" }} />
-              BAIXAR EBOOK AGORA
-            </div>
-            <div className="lock-overlay">
-              <FaLock className="lock-icon" />
-            </div>
+            <CTAButton href="#" disabled>
+              <FaClock style={{ marginRight: "0.5rem", fontSize: "1.2rem" }} />
+              Disponível em Breve
+            </CTAButton>
           </div>
         </div>
 

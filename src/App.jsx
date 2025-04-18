@@ -22,12 +22,15 @@ import PromotionalBanner from "./Components/8-Amazon";
 
 import FreeReading from "./Components/FreeReading";
 
+import PainToPowerSection from "./Components/PainToPowerSection";
+
 function App() {
   return (
     <>
       <Header />
       <HeroSection />
       <WhoAre />
+      <PainToPowerSection />
       <Reviews />
       <SlideBar />
       <Home />
