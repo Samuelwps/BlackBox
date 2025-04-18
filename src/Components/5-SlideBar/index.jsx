@@ -24,7 +24,7 @@ import {
 
 // Importações de imagens
 import image7 from "../../images/Ebooks/amigos.webp";
-// import image10 from "../../images/Ebooks/autoresponsabilidade.webp";
+import image10 from "../../images/Ebooks/responsabilidade.webp";
 import caminhoRiqueza from "../../images/Ebooks/caminho_riqueza.webp";
 import cerebroPerformance from "../../images/Ebooks/o_cerebro.webp";
 import convencer90s from "../../images/Ebooks/convencer_90s.webp";
