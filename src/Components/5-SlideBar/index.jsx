@@ -31,7 +31,7 @@ import convencer90s from "../../images/Ebooks/convencer_90s.webp";
 import dinheiroFeliz from "../../images/Ebooks/dinheiro_feliz.webp";
 import elonMusk from "../../images/Ebooks/elon_musk.webp";
 import emocionalPratica from "../../images/Ebooks/inteligencia_emocional.webp";
-import fimProcrastinacao from "../../images/Ebooks/fim_procastinacao.webp";
+import fimProcrastinacao from "../../images/Ebooks/fim_procastinyacao.webp";
 import formigas from "../../images/Ebooks/formigas.webp";
 import fortunaAcoes from "../../images/Ebooks/faca_fortunas_com_acoes.webp";
 import habito from "../../images/Ebooks/o_poder_do_habito.webp";
