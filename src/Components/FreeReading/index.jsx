@@ -9,14 +9,14 @@ const freeBooks = [
   {
     id: 1,
     title: "O Poder do Hábito",
-    image: "/src/images/Ebooks/habito.webp",
-    link: OpoderdoHabito, // Certifique-se de que o arquivo está na pasta correta
+    image: OpoderdoHabito,
+    link: "/downloads/OPoderDoHabito.pdf", // Certifique-se de que o arquivo está na pasta correta
   },
   {
     id: 2,
     title: "Mindset: A Nova Psicologia do Sucesso",
-    image: "/src/images/Ebooks/mindset.webp",
-    link: MindSet, // Certifique-se de que o arquivo está na pasta correta
+    image: MindSet,
+    link: "/downloads/MindSet.pdf", // Certifique-se de que o arquivo está na pasta correta
   },
 ];
 
