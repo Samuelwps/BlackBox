@@ -100,19 +100,19 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
 // Dados para cada categoria
 const personalDevelopmentSlides = [
   {
-    image: "/images/Ebooks/HABITOS_ATOMICOS.png",
+    image: "/images/Ebooks/HABITOS_ATOMICOS.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_PODER_DO_AGORA.png",
+    image: "/images/Ebooks/O_PODER_DO_AGORA.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/MINDSET.png",
+    image: "/images/Ebooks/MINDSET.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/INTELIGENCIA_EMOCIONAL.png",
+    image: "/images/Ebooks/INTELIGENCIA_EMOCIONAL.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
@@ -124,115 +124,115 @@ const personalDevelopmentSlides = [
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_PODER_DO_HABITO.png",
+    image: "/images/Ebooks/O_PODER_DO_HABITO.webp",
     link: "https://black-box-nine.vercel.app",
   },
 ];
 
 const leadershipSlides = [
   {
-    image: "/images/Ebooks/ALEXANDRE_FERGURSON.png",
+    image: "/images/Ebooks/ALEXANDRE_FERGURSON.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/MESTRE_DA_PERSUASAO.png",
+    image: "/images/Ebooks/MESTRE_DA_PERSUASAO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_JOGO_INFINITO.png",
+    image: "/images/Ebooks/O_JOGO_INFINITO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/convencer_90s.png",
+    image: "/images/Ebooks/convencer_90s.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/caminho_riqueza.png",
+    image: "/images/Ebooks/caminho_riqueza.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_PRINCIPE.png",
+    image: "/images/Ebooks/O_PRINCIPE.webp",
     link: "https://black-box-nine.vercel.app",
   },
 ];
 
 const financeSlides = [
   {
-    image: "/images/Ebooks/dinheiro_feliz.png",
+    image: "/images/Ebooks/dinheiro_feliz.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/MIL_AO_MILHAO.png",
+    image: "/images/Ebooks/MIL_AO_MILHAO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/FAÇA_FORTUNAS_COM_AÇOES.png",
+    image: "/images/Ebooks/FAÇA_FORTUNAS_COM_AÇOES.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/ELON_MUSK.png",
+    image: "/images/Ebooks/ELON_MUSK.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/FORMIGAS.png",
+    image: "/images/Ebooks/FORMIGAS.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/o_cerebro.png",
+    image: "/images/Ebooks/o_cerebro.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_LADO_DIFICIL_DA_SITUAÇAO.png",
+    image: "/images/Ebooks/O_LADO_DIFICIL_DA_SITUAÇAO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_LOBO_ALSSTRET.png",
+    image: "/images/Ebooks/O_LOBO_ALSSTRET.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/OS_SEGREDOS_LOBOS.png",
+    image: "/images/Ebooks/OS_SEGREDOS_LOBOS.webp",
     link: "https://black-box-nine.vercel.app",
   },
 ];
 
 const productivitySlides = [
   {
-    image: "/images/Ebooks/FIM_PROCASTINACAO.png",
+    image: "/images/Ebooks/FIM_PROCASTINACAO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/COMO_SER_MAIS_PRODUTIVO.png",
+    image: "/images/Ebooks/COMO_SER_MAIS_PRODUTIVO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/RAPIDO_E_DEVAGAR.png",
+    image: "/images/Ebooks/RAPIDO_E_DEVAGAR.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/SCRUM.png",
+    image: "/images/Ebooks/SCRUM.webp",
     link: "https://black-box-nine.vercel.app",
   },
 ];
 
 const otherSlides = [
   {
-    image: "/images/Ebooks/SAPIENS.png",
+    image: "/images/Ebooks/SAPIENS.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/QUEM_PENSA_ENRIQUECE.png",
+    image: "/images/Ebooks/QUEM_PENSA_ENRIQUECE.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/O_PROBLEMA_e_SEU.png",
+    image: "/images/Ebooks/O_PROBLEMA_e_SEU.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/VOCE_E_UNIVERSO.png",
+    image: "/images/Ebooks/VOCE_E_UNIVERSO.webp",
     link: "https://black-box-nine.vercel.app",
   },
   {
-    image: "/images/Ebooks/SEX.png",
+    image: "/images/Ebooks/SEX.webp",
     link: "https://black-box-nine.vercel.app",
   },
 ];

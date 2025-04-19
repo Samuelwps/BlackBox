@@ -3,7 +3,7 @@ import path from "path";
 import sharp from "sharp";
 
 // Caminho da pasta onde estão as imagens
-const folderPath = path.join(process.cwd(), "src/images/Ebooks");
+const folderPath = path.join(process.cwd(), "public/images/Ebooks");
 
 // Cria uma nova pasta para salvar as imagens convertidas
 const outputFolder = path.join(folderPath, "converted");

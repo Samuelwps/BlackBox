@@ -6,14 +6,14 @@ const freeBooks = [
   {
     id: 1,
     title: "O Poder do Hábito",
-    image: "/images/Ebooks/O_PODER_DO_HABITO.png",
+    image: "/images/Ebooks/O_PODER_DO_HABITO.webp",
     description: "Descubra como hábitos moldam sua vida e como transformá-los.",
     link: "/downloads/OPoderDoHabito.pdf",
   },
   {
     id: 2,
     title: "Mindset: A Nova Psicologia do Sucesso",
-    image: "/images/Ebooks/MINDSET.png",
+    image: "/images/Ebooks/MINDSET.webp",
     description: "Aprenda a desenvolver uma mentalidade de crescimento.",
     link: "/downloads/MindSet.pdf",
   },
