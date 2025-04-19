@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Title, Description, Cards, Card, Button } from "./styled";
 import { FaDownload } from "react-icons/fa";
 import OpoderdoHabito from "../../images/Ebooks/O_PODER_DO_HABITO.png";
-import MindSet from "../../images/Ebooks/habitos_atomicos.png";
+import MindSetImage from "../../images/Ebooks/habitos_atomicos.png";
 import OPoderDaAutorresponsabilidade from "../../images/Ebooks/autoresponsabilidade.webp";
 
 const freeBooks = [
@@ -16,7 +16,7 @@ const freeBooks = [
   {
     id: 2,
     title: "Mindset: A Nova Psicologia do Sucesso",
-    image: MindSet,
+    image: MindSetImage,
     description: "Aprenda a desenvolver uma mentalidade de crescimento.",
     link: "/downloads/MindSet.pdf", // Caminho correto para a pasta public/downloads
   },
