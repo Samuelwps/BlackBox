@@ -10,11 +10,6 @@ import {
 import { BsBookHalf } from "react-icons/bs";
 import { MdLock } from "react-icons/md"; // Importa o ícone de cadeado
 import { motion } from "framer-motion";
-
-import imageFBI from "../../images/FBI.png";
-import imagePER from "../../images/persuasão.png";
-import imageGUE from "../../images/guerra.png";
-
 import { MdGetApp } from "react-icons/md";
 
 const books = [
@@ -25,7 +20,7 @@ const books = [
       "O Manual de Persuasão do FBI, de Jack Schafer, ensina técnicas de persuasão e construção de rapport usadas pelo FBI para influenciar e conquistar a confiança das pessoas.",
     oldPrice: "R$30,99",
     newPrice: "R$15,99",
-    image: imageFBI,
+    image: "/images/FBI.png", // Caminho direto para a pasta public
     link: "https://pay.kirvano.com/a8b6852c-9c03-4b1a-b951-1a2a74141cc8",
   },
   {
@@ -35,7 +30,7 @@ const books = [
       "Aprenda a arte de influenciar pessoas com base em princípios psicológicos comprovados.",
     oldPrice: "R$45,00",
     newPrice: "R$22,50",
-    image: imagePER,
+    image: "/images/persuasão.png", // Caminho direto para a pasta public
     link: "https://pay.kirvano.com/6d4f62b1-9c12-4f4b-b123-8f4c13d2c123",
   },
   {
@@ -45,7 +40,7 @@ const books = [
       "Estratégias atemporais de Sun Tzu aplicadas aos negócios, política e vida pessoal.",
     oldPrice: "R$39,90",
     newPrice: "R$19,95",
-    image: imageGUE,
+    image: "/images/guerra.png", // Caminho direto para a pasta public
     link: "https://pay.kirvano.com/8a7d12c3-2b45-4c67-a134-7e8b123c4567",
   },
 ];

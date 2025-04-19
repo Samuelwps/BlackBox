@@ -1,31 +1,28 @@
 import React from "react";
 import { Container, Title, Description, Cards, Card, Button } from "./styled";
 import { FaDownload } from "react-icons/fa";
-import OpoderdoHabito from "../../images/Ebooks/O_PODER_DO_HABITO.png";
-import MindSetImage from "../../images/Ebooks/habitos_atomicos.png";
-import OPoderDaAutorresponsabilidade from "../../images/Ebooks/autoresponsabilidade.webp";
 
 const freeBooks = [
   {
     id: 1,
     title: "O Poder do Hábito",
-    image: OpoderdoHabito,
+    image: "/images/Ebooks/o_poder_do_habito.webp",
     description: "Descubra como hábitos moldam sua vida e como transformá-los.",
-    link: "/downloads/OPoderDoHabito.pdf", // Caminho correto para a pasta public/downloads
+    link: "/downloads/OPoderDoHabito.pdf",
   },
   {
     id: 2,
     title: "Mindset: A Nova Psicologia do Sucesso",
-    image: MindSetImage,
+    image: "/images/Ebooks/mindset.webp",
     description: "Aprenda a desenvolver uma mentalidade de crescimento.",
-    link: "/downloads/MindSet.pdf", // Caminho correto para a pasta public/downloads
+    link: "/downloads/MindSet.pdf",
   },
   {
     id: 3,
     title: "O Poder Da Autorresponsabilidade",
-    image: OPoderDaAutorresponsabilidade,
+    image: "/images/Ebooks/autoresponsabilidade.webp",
     description: "Assuma o controle da sua vida com autorresponsabilidade.",
-    link: "/downloads/OPoderDaAutorresponsabilidade.pdf", // Caminho correto para a pasta public/downloads
+    link: "/downloads/OPoderDaAutorresponsabilidade.pdf",
   },
 ];
 

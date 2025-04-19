@@ -3,9 +3,6 @@ import { FaCheck, FaClock, FaLock } from "react-icons/fa";
 import { GiBurningBook } from "react-icons/gi";
 import { CTAButton } from "../PainToPowerSection/styled"; // Import the styled button
 
-import ImageMembros from "../../images/membros.webp";
-import videoIntro from "../../videos/introvideo.mp4";
-
 function HeroSection() {
   return (
     <Container>
@@ -39,14 +36,14 @@ function HeroSection() {
         </div>
 
         <span>
-          <img src={ImageMembros} alt="Membros" />
+          <img src="/images/membros.webp" alt="Membros" />
           +1.000 LEITORES
         </span>
       </ActionHero>
 
       <ImageHero>
         <video autoPlay loop muted playsInline>
-          <source src={videoIntro} type="video/mp4" />
+          <source src="/videos/introvideo.mp4" type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </ImageHero>
