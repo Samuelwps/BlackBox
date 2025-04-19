@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Title, Description, Cards, Card, Button } from "./styled";
 import { FaDownload } from "react-icons/fa";
-import OpoderdoHabito from "/src/images/Ebooks/O_PODER_DO_HABITO.webp";
-import MindSet from "/src/images/Ebooks/mindset.webp";
-import OPoderDaAutorresponsabilidade from "/src/images/Ebooks/responsabilidade.webp";
+import OpoderdoHabito from "/src/images/Ebooks/O_PODER_DO_HABITO.png";
+import MindSet from "/src/images/Ebooks/mindset.png";
+import OPoderDaAutorresponsabilidade from "/src/images/Ebooks/autoresponsabilidade.webp";
 
 const freeBooks = [
   {
