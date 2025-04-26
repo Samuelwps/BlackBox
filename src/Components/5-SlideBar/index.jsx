@@ -119,14 +119,14 @@ const personalDevelopmentSlides = [
     image: "/images/Ebooks/amigos.webp",
     link: "https://black-box-nine.vercel.app",
   },
-  {
-    image: "/images/Ebooks/autoresponsabilidade.webp",
-    link: "https://black-box-nine.vercel.app",
-  },
-  {
-    image: "/images/Ebooks/O_PODER_DO_HABITO.webp",
-    link: "https://black-box-nine.vercel.app",
-  },
+  // {
+  //   image: "/images/Ebooks/autoresponsabilidade.webp",
+  //   link: "https://black-box-nine.vercel.app",
+  // },
+  // {
+  //   image: "/images/Ebooks/O_PODER_DO_HABITO.webp",
+  //   link: "https://black-box-nine.vercel.app",
+  // },
 ];
 
 const leadershipSlides = [
