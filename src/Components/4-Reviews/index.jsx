@@ -18,14 +18,14 @@ function Reviews() {
       text: "Eu li um dos eBooks em uma tarde e já mudei minha forma de pensar no trabalho. Resultado? Fui promovido 2 meses depois. Vale cada centavo!",
       name: "Bruno L., 32 anos, Gerente Comercial",
       date: "cliente desde 2025",
-      image: "/images/avatar/avatar1.webp", // Caminho direto para a pasta public
+      image: "/images/avatar/avatar2.webp", // Caminho direto para a pasta public
     },
     {
       id: 2,
       text: "Sempre achei que desenvolvimento pessoal era enrolação… até começar a aplicar as técnicas simples que aprendi aqui. Em 3 semanas, meus resultados dobraram. Incrível!",
       name: "Tatiane R., 28 anos, Empreendedora",
       date: "cliente desde 2022",
-      image: "/images/avatar/avatar2.webp", // Caminho direto para a pasta public
+      image: "/images/avatar/avatar1.webp", // Caminho direto para a pasta public
     },
     {
       id: 3,
