@@ -32,7 +32,7 @@ export const Container = styled.div`
     margin-top: -4rem; /* Margem negativa para versão mobile */
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
     width: 100%;
   }
 
@@ -118,24 +118,49 @@ export const Line = styled.div`
 `;
 
 export const Button = styled.button`
-  margin-top: 12px;
-  padding: 10px 20px;
-  background-color: #007bff;
+  cursor: pointer;
+  width: 80%;
+  background: linear-gradient(45deg, #ff073a, #991b1b);
   color: #fff;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  width: 80%; /* ✅ Faz o botão ter a mesma largura da imagem */
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(255, 7, 58, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 
   &:hover {
-    background-color: #0056b3;
+    background: linear-gradient(45deg, #991b1b, #ff073a);
+    box-shadow: 0 6px 20px rgba(255, 7, 58, 0.7);
+    transform: scale(1.05);
   }
 
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 16px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  .button-text {
+    z-index: 1;
   }
 `;
 

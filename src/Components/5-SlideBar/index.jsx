@@ -8,6 +8,7 @@ import {
   FaClock,
   FaBook,
   FaLock,
+  FaArrowRight,
 } from "react-icons/fa";
 
 // Importações de estilos
@@ -77,16 +78,13 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
               <Item as={motion.div} className="item" key={index}>
                 <img src={slide.image} alt={`Imagem ${index + 1}`} />
                 <Button
-                  disabled
-                  style={{
-                    cursor: "not-allowed",
-                    opacity: 0.6,
-                    backgroundColor: "#ccc",
-                    color: "#555",
-                  }}
+                  className="custom-button"
+                  onClick={() => window.open(slide.link, "_blank")}
                 >
-                  <FaLock style={{ marginRight: "0.5rem" }} />
-                  Disponível em breve
+                  <span className="button-text">
+                    <FaArrowRight style={{ marginRight: "0.5rem" }} />
+                    Acessar Ebook
+                  </span>
                 </Button>
               </Item>
             ))}
@@ -101,7 +99,7 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
 const personalDevelopmentSlides = [
   {
     image: "/images/Ebooks/HABITOS_ATOMICOS.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/24d506c9-1c87-4cfb-9f0d-cd73c1fbad44",
   },
   {
     image: "/images/Ebooks/O_PODER_DO_AGORA.webp",
