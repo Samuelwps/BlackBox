@@ -103,19 +103,19 @@ const personalDevelopmentSlides = [
   },
   {
     image: "/images/Ebooks/O_PODER_DO_AGORA.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/d67d6952-b747-45b8-a048-7294bef5acab",
   },
   {
     image: "/images/Ebooks/MINDSET.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/f0c1ad96-af18-49e7-a069-460019d129c4",
   },
   {
     image: "/images/Ebooks/INTELIGENCIA_EMOCIONAL.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/f474f332-404d-457d-9fd3-47fe8ae7ca54",
   },
   {
     image: "/images/Ebooks/amigos.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/92e844c2-fbdb-451b-b9c0-dede4f7dc222",
   },
   // {
   //   image: "/images/Ebooks/autoresponsabilidade.webp",
@@ -130,27 +130,27 @@ const personalDevelopmentSlides = [
 const leadershipSlides = [
   {
     image: "/images/Ebooks/ALEXANDRE_FERGURSON.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/9760e10e-f2e8-401a-a740-cab45b797e62",
   },
   {
     image: "/images/Ebooks/MESTRE_DA_PERSUASAO.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/b1fe86aa-fb66-4460-8c7a-7a523d133db8",
   },
   {
     image: "/images/Ebooks/O_JOGO_INFINITO.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/869a3028-14a8-454a-a83d-9a6be57818c1",
   },
   {
     image: "/images/Ebooks/convencer_90s.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/7e674dea-a17b-4bfa-8a24-2e5755dee948",
   },
   {
     image: "/images/Ebooks/caminho_riqueza.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/8c629840-7a2d-4dbb-83bf-d58e777758d2",
   },
   {
     image: "/images/Ebooks/O_PRINCIPE.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/c27e23f6-772d-4ce9-b45f-f64f6861e966",
   },
 ];
 
