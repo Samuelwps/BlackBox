@@ -20,6 +20,7 @@ export const ContainerALl = styled.div`
 `;
 
 export const Container = styled.div`
+  position: relative; /* Adicionado para posicionar as setas */
   width: 80%;
   margin-top: 1rem; /* Margem padrão */
   min-height: 100vh;
@@ -68,6 +69,7 @@ export const Container = styled.div`
   }
 
   .carousel {
+    position: relative; /* Adicionado para posicionar as setas corretamente */
     cursor: grab;
     overflow-x: hidden; /* 👈 Aqui resolve o scroll indesejado */
     width: 100%;
@@ -224,5 +226,35 @@ export const Item = styled.div`
     height: 100%;
     object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
     border-radius: 8px; /* Opcional: adiciona bordas arredondadas */
+  }
+`;
+
+export const NavigationArrow = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  &.left {
+    left: -20px; /* Ajuste para posicionar no canto esquerdo */
+  }
+
+  &.right {
+    right: -20px; /* Ajuste para posicionar no canto direito */
   }
 `;

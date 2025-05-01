@@ -7,9 +7,9 @@ import {
   FaMoneyBillWave,
   FaClock,
   FaBook,
-  FaLock,
   FaArrowRight,
 } from "react-icons/fa";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 // Importações de estilos
 import {
@@ -21,6 +21,7 @@ import {
   Lines,
   ContainerHeader,
   Item,
+  NavigationArrow,
 } from "./styled.js";
 
 // Função genérica para criar SlideBars
@@ -28,6 +29,7 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
   const [width, setWidth] = useState(0);
   const carousel = useRef(null);
   const innerCarousel = useRef(null);
+  const carouselRef = useRef(null);
 
   useEffect(() => {
     const updateWidth = () => {
@@ -43,6 +45,18 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
     updateWidth();
     return () => resizeObserver.disconnect();
   }, []);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
 
   return (
     <ContainerALl>
@@ -90,6 +104,12 @@ const SlideBar = ({ title, description, slides, icon: Icon, iconColor }) => {
             ))}
           </motion.div>
         </motion.div>
+        <NavigationArrow className="left" onClick={scrollLeft}>
+          <IoIosArrowBack size={24} />
+        </NavigationArrow>
+        <NavigationArrow className="right" onClick={scrollRight}>
+          <IoIosArrowForward size={24} />
+        </NavigationArrow>
       </Container>
     </ContainerALl>
   );
@@ -157,81 +177,77 @@ const leadershipSlides = [
 const financeSlides = [
   {
     image: "/images/Ebooks/dinheiro_feliz.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/fa776e58-b66a-45df-bf96-2e0cc1719cd3",
   },
   {
     image: "/images/Ebooks/MIL_AO_MILHAO.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/be71d921-f905-4229-aa78-d31e94c096c7",
   },
   {
     image: "/images/Ebooks/FAÇA_FORTUNAS_COM_AÇOES.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/92ef2e7e-22f3-4607-a96d-f511be8a5b00",
   },
   {
     image: "/images/Ebooks/ELON_MUSK.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/ff4432f9-c757-4e1a-8537-ff1a08ce5a7d",
   },
   {
     image: "/images/Ebooks/FORMIGAS.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/ea0d2044-1072-4691-85b8-ca8ba034eb4b",
   },
   {
     image: "/images/Ebooks/o_cerebro.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/ec55f6db-ecc4-4822-a1c2-dfeee0cae7f2",
   },
   {
     image: "/images/Ebooks/O_LADO_DIFICIL_DA_SITUAÇAO.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/315600f4-a766-4526-a71e-2302c07d13d6",
   },
   {
     image: "/images/Ebooks/O_LOBO_ALSSTRET.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/82d0016d-6476-4b3e-b72e-be40c4d9e0f5",
   },
   {
     image: "/images/Ebooks/OS_SEGREDOS_LOBOS.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/35ad62c4-0b5d-48e3-8f7d-088bc48981d2",
   },
 ];
 
 const productivitySlides = [
   {
     image: "/images/Ebooks/FIM_PROCASTINACAO.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/a967b7d0-9458-4c6e-8228-3720a2e19972",
   },
   {
     image: "/images/Ebooks/COMO_SER_MAIS_PRODUTIVO.webp",
-    link: "https://black-box-nine.vercel.app",
-  },
-  {
-    image: "/images/Ebooks/RAPIDO_E_DEVAGAR.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/c198fa1b-56d6-47e3-9651-663a733c03c3",
   },
   {
     image: "/images/Ebooks/SCRUM.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/9077406a-3f28-45c7-ab5f-b06666d44693",
   },
 ];
 
 const otherSlides = [
   {
     image: "/images/Ebooks/SAPIENS.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/ed8fe2a4-669a-4446-9c2b-6abbf90bf2df",
   },
   {
     image: "/images/Ebooks/QUEM_PENSA_ENRIQUECE.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/de226de7-098a-4bb1-81d5-14dc0d43d33e",
   },
   {
     image: "/images/Ebooks/O_PROBLEMA_e_SEU.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/9f3245f8-d221-43d1-bb40-384a5e051929",
   },
   {
     image: "/images/Ebooks/VOCE_E_UNIVERSO.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/04f9acce-a752-46e5-9bfa-8cb34405984b",
   },
   {
     image: "/images/Ebooks/SEX.webp",
-    link: "https://black-box-nine.vercel.app",
+    link: "https://pay.kirvano.com/ef07c1b5-27db-44f6-bdbe-ccfed4fc51d4",
   },
 ];
 
