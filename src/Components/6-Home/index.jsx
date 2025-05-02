@@ -11,36 +11,39 @@ import { BsBookHalf } from "react-icons/bs";
 import { MdLock } from "react-icons/md"; // Importa o ícone de cadeado
 import { motion } from "framer-motion";
 import { MdGetApp } from "react-icons/md";
+import { CTAButton } from "../PainToPowerSection/styled";
+import { FaClock } from "react-icons/fa"; // Import the clock icon
+import { FaBrain, FaUnlock, FaHeart } from "react-icons/fa"; // Exemplos de ícones
 
 const books = [
   {
     id: 1,
-    title: "MANUAL DE PERSUASÃO DO FBI (Jack Schafer)",
+    title: "Pack Mente Inabalável",
     description:
-      "O Manual de Persuasão do FBI, de Jack Schafer, ensina técnicas de persuasão e construção de rapport usadas pelo FBI para influenciar e conquistar a confiança das pessoas.",
-    oldPrice: "R$30,99",
-    newPrice: "R$15,99",
-    image: "/images/FBI.png", // Caminho direto para a pasta public
+      "Este pack te ensina a forjar uma mente forte como aço: hábitos que mudam vidas, controle das emoções, superação de limites e estratégias para calar o ego sabotador. Ideal pra quem quer parar de desistir no meio do caminho e virar uma máquina de foco e consistência.",
+    icon: <FaBrain />,
+    color: "#FF5733", // Cor para o ícone
+    image: "/images/EmBrevePacks.png",
     link: "https://pay.kirvano.com/a8b6852c-9c03-4b1a-b951-1a2a74141cc8",
   },
   {
     id: 2,
-    title: "As Armas da Persuasão (Robert Cialdini)",
+    title: "Pack Liberdade e Poder",
     description:
-      "Aprenda a arte de influenciar pessoas com base em princípios psicológicos comprovados.",
-    oldPrice: "R$45,00",
-    newPrice: "R$22,50",
-    image: "/images/persuasão.png", // Caminho direto para a pasta public
+      "Aqui você descobre como sair das armadilhas mentais, assumir o comando da sua vida e atrair prosperidade com uma mentalidade vencedora. Um guia para quem quer liberdade emocional, riqueza consciente e presença total no agora.",
+    icon: <FaUnlock />,
+    color: "#33FF57", // Cor para o ícone
+    image: "/images/EmBrevePacks.png",
     link: "https://pay.kirvano.com/6d4f62b1-9c12-4f4b-b123-8f4c13d2c123",
   },
   {
     id: 3,
-    title: "A Arte da Guerra (Sun Tzu)",
+    title: "Pack Conexão e Propósito",
     description:
-      "Estratégias atemporais de Sun Tzu aplicadas aos negócios, política e vida pessoal.",
-    oldPrice: "R$39,90",
-    newPrice: "R$19,95",
-    image: "/images/guerra.png", // Caminho direto para a pasta public
+      "Esse pack é uma jornada de dentro pra fora: vulnerabilidade com coragem, propósito com clareza e um mergulho no seu subconsciente pra destravar seu verdadeiro potencial. Ideal pra quem quer mais significado, relações verdadeiras e impacto positivo no mundo.",
+    icon: <FaHeart />,
+    color: "#3357FF", // Cor para o ícone
+    image: "/images/EmBrevePacks.png",
     link: "https://pay.kirvano.com/8a7d12c3-2b45-4c67-a134-7e8b123c4567",
   },
 ];
@@ -66,7 +69,7 @@ function Home() {
 
       <Container>
         <h1>
-          LIVROS EM <span>DESTAQUE</span>
+          PACKs EM <span>DESTAQUE</span>
         </h1>
         <Stars />
 
@@ -80,17 +83,50 @@ function Home() {
               <li>
                 <div>
                   <div>
-                    <strong>{book.title}</strong>
-                    <p>{book.description}</p>
+                    <motion.div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center", // Centraliza horizontalmente
+                        gap: "0.5rem",
+                        textAlign: "center", // Centraliza o texto
+                      }}
+                      animate={{ scale: [1, 1.1, 1] }}
+                      transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      <book.icon.type
+                        style={{ color: book.color, fontSize: "2rem" }}
+                      />
+                      <strong>{book.title}</strong>
+                    </motion.div>
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5 }}
+                      style={{
+                        whiteSpace: "pre-line",
+                        lineHeight: "1.6",
+                        textAlign: "center", // Centraliza o texto
+                      }}
+                    >
+                      {book.description}
+                    </motion.p>
                   </div>
-                  <Price>
-                    <del>DE {book.oldPrice}</del>
-                    <h3>POR</h3>
+                  <Price style={{ textAlign: "center" }}>
+                    {" "}
+                    {/* Centraliza os preços */}
+                    <del>{book.oldPrice}</del>
                     <h2>{book.newPrice}</h2>
-                    <DisabledButton>
-                      <MdLock />
-                      EM BREVE
-                    </DisabledButton>
+                    <CTAButton href="#" disabled>
+                      <FaClock
+                        style={{ marginRight: "0.5rem", fontSize: "1.2rem" }}
+                      />
+                      Disponível em Breve
+                    </CTAButton>
                   </Price>
                 </div>
               </li>

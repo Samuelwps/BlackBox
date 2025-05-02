@@ -278,6 +278,7 @@ export const SectionBook = styled.div`
         }
 
         p {
+          margin-top:1rem;
           font-size: 1rem;
           font-size: 1rem;
           color: var(--LightGray);
@@ -360,7 +361,6 @@ export const Price = styled.div`
   text-align: center; /* Centraliza o texto */
   gap: 0.5rem; /* Espaçamento entre os elementos */
 
-  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 
