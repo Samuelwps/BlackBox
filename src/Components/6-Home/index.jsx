@@ -5,7 +5,9 @@ import {
   ContainerInLine,
   Lines,
   Stars,
-  DisabledButton, // Importa o botão desativado estilizado
+  DisabledButton,
+  RecommendationsGrid,
+  RecommendationCard,
 } from "./styles";
 import { BsBookHalf } from "react-icons/bs";
 import { MdLock } from "react-icons/md"; // Importa o ícone de cadeado
@@ -23,8 +25,13 @@ const books = [
       "Este pack te ensina a forjar uma mente forte como aço: hábitos que mudam vidas, controle das emoções, superação de limites e estratégias para calar o ego sabotador. Ideal pra quem quer parar de desistir no meio do caminho e virar uma máquina de foco e consistência.",
     icon: <FaBrain />,
     color: "#FF5733", // Cor para o ícone
-    image: "/images/EmBrevePacks.png",
+    image: "/images/BrainForce.png",
     link: "https://pay.kirvano.com/a8b6852c-9c03-4b1a-b951-1a2a74141cc8",
+    recommendations: [
+      { title: "O Poder do Hábito", author: "Charles Duhigg" },
+      { title: "Mindset", author: "Carol S. Dweck" },
+      { title: "Essencialismo", author: "Greg McKeown" },
+    ],
   },
   {
     id: 2,
@@ -33,8 +40,13 @@ const books = [
       "Aqui você descobre como sair das armadilhas mentais, assumir o comando da sua vida e atrair prosperidade com uma mentalidade vencedora. Um guia para quem quer liberdade emocional, riqueza consciente e presença total no agora.",
     icon: <FaUnlock />,
     color: "#33FF57", // Cor para o ícone
-    image: "/images/EmBrevePacks.png",
+    image: "/images/BrainOpen.png",
     link: "https://pay.kirvano.com/6d4f62b1-9c12-4f4b-b123-8f4c13d2c123",
+    recommendations: [
+      { title: "Os Segredos da Mente Milionária", author: "T. Harv Eker" },
+      { title: "Quem Pensa Enriquece", author: "Napoleon Hill" },
+      { title: "O Ego é Seu Inimigo", author: "Ryan Holiday" },
+    ],
   },
   {
     id: 3,
@@ -43,8 +55,13 @@ const books = [
       "Esse pack é uma jornada de dentro pra fora: vulnerabilidade com coragem, propósito com clareza e um mergulho no seu subconsciente pra destravar seu verdadeiro potencial. Ideal pra quem quer mais significado, relações verdadeiras e impacto positivo no mundo.",
     icon: <FaHeart />,
     color: "#3357FF", // Cor para o ícone
-    image: "/images/EmBrevePacks.png",
+    image: "/images/BrainHeart.png",
     link: "https://pay.kirvano.com/8a7d12c3-2b45-4c67-a134-7e8b123c4567",
+    recommendations: [
+      { title: "O Caminho do Artista", author: "Julia Cameron" },
+      { title: "Propósito", author: "Sri Prem Baba" },
+      { title: "Inteligência Emocional", author: "Daniel Goleman" },
+    ],
   },
 ];
 
@@ -74,7 +91,12 @@ function Home() {
         <Stars />
 
         {books.map(book => (
-          <SectionBook key={book.id}>
+          <SectionBook
+            key={book.id}
+            data-pack={book.title.replace(/\s/g, "-").toLowerCase()}
+          >
+            {/* Glow/Neon Accent */}
+            <div className="pack-glow" data-pack-color={book.color} />
             <div className="flexBlocks">
               <img src={book.image} alt={book.title} />
             </div>
@@ -87,9 +109,9 @@ function Home() {
                       style={{
                         display: "flex",
                         alignItems: "center",
-                        justifyContent: "center", // Centraliza horizontalmente
+                        justifyContent: "center",
                         gap: "0.5rem",
-                        textAlign: "center", // Centraliza o texto
+                        textAlign: "center",
                       }}
                       animate={{ scale: [1, 1.1, 1] }}
                       transition={{
@@ -99,26 +121,32 @@ function Home() {
                       }}
                     >
                       <book.icon.type
-                        style={{ color: book.color, fontSize: "2rem" }}
+                        style={{
+                          color: book.color,
+                          fontSize: "2.2rem",
+                        }}
                       />
-                      <strong>{book.title}</strong>
+                      <strong className="pack-title">{book.title}</strong>
                     </motion.div>
                     <motion.p
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5 }}
-                      style={{
-                        whiteSpace: "pre-line",
-                        lineHeight: "1.6",
-                        textAlign: "center", // Centraliza o texto
-                      }}
+                      className="pack-description"
                     >
                       {book.description}
                     </motion.p>
+                    <RecommendationsGrid className="pack-recommendations">
+                      {book.recommendations &&
+                        book.recommendations.map((rec, idx) => (
+                          <RecommendationCard key={idx}>
+                            <div className="rec-title">{rec.title}</div>
+                            <div className="rec-author">{rec.author}</div>
+                          </RecommendationCard>
+                        ))}
+                    </RecommendationsGrid>
                   </div>
                   <Price style={{ textAlign: "center" }}>
-                    {" "}
-                    {/* Centraliza os preços */}
                     <del>{book.oldPrice}</del>
                     <h2>{book.newPrice}</h2>
                     <CTAButton href="#" disabled>

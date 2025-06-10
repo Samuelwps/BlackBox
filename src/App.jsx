@@ -37,7 +37,7 @@ function App() {
       <Questions />
       <FreeReading />
       <Copyright />
-      <PromotionalBanner />
+      {/* <PromotionalBanner /> */}
     </>
   );
 }
